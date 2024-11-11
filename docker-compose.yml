@@ -1,0 +1,44 @@
+services:
+  dock-front:
+    build: ./sobeys-pod3
+    container_name: frontend_c
+    ports: 
+      - '3000:3000'
+    depends_on:
+      - mssql
+      - redis-stack
+    volumes: 
+      - ./sobeys-pod3:/app
+      - ./sobeys-pod3/node_modules:/app/node_modules
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Password_123#
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD", "sqlcmd", "-S", "localhost", "-U", "sa", "-P", "YourStrong@Passw0rd", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  redis-stack:
+    image: redis/redis-stack:latest
+    container_name: redis-stack
+    ports:
+      - "6379:6379"  # Redis standard port
+      - "8001:8001"  # RedisInsight UI port (optional)
+    volumes:
+      - redis_data:/data  # Persist data in a Docker volume
+
+
+volumes:
+  mssql_data:
+  redis_data:
+
+
