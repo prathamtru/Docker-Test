@@ -29,6 +29,7 @@ export default function UsersList() {
 
   return (
     <div>
+      <p>Note- This is dummy Data to check the database connection</p>
      {JSON.stringify(users)}
     </div>
   );
