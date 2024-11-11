@@ -20,9 +20,9 @@ yarn-error.log*
 *.tsbuildinfo
 
 # dotenv environment variable files
-.env
-.env.local
-.env.*.local
+#.env
+#.env.local
+#.env.*.local
 
 # Next.js specific configuration files (or other local configuration)
 .next/
