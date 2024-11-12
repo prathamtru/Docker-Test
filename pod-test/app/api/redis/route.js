@@ -4,7 +4,7 @@ import redis from '../../../lib/redis';
 export async function GET() {
   try {
     // Attempt to get a value from Redis
-    const value = await redis.get('my-key');
+    const value = await redis.get('name');
 
     if (value) {
       return new Response(JSON.stringify({ success: true, value }), { status: 200 });

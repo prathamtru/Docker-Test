@@ -2,6 +2,7 @@
 
 'use client';
 
+import { Card } from '@/components/pageComponents/Card';
 import { useEffect, useState } from 'react';
 
 export default function UsersList() {
@@ -29,6 +30,7 @@ export default function UsersList() {
 
   return (
     <div>
+      <Card />
       <p>Note- This is dummy Data to check the database connection</p>
      {JSON.stringify(users)}
     </div>
