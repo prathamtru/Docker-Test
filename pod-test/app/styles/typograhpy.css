@@ -1,0 +1,12 @@
+.title-primary {
+    @apply ui-text-4xl ui-font-extrabold;
+}
+.title-secondary {
+    @apply ui-text-3xl ui-font-extrabold;
+}
+.title-tertiary {
+    @apply ui-text-2xl ui-font-extrabold;
+}
+.title-quaternary {
+    @apply ui-text-xl ui-font-extrabold;
+}
