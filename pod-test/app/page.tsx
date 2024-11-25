@@ -33,6 +33,7 @@ export default function UsersList() {
       <Card />
       <p>Note- This is dummy Data to check the database connection</p>
      {JSON.stringify(users)}
+     {console.log("hi")}
     </div>
   );
 }
