@@ -17,6 +17,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         lightgray: '#DCDCDC',
+        lightgray2: '#dddddd',
+        green: "#003D2A",
       },
       boxShadow: {
         lightGray: "0 0 4px 0 rgba(0, 0, 0, 0.25)",
