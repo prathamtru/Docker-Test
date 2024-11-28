@@ -1,6 +1,4 @@
-import Tabs from '../components/Tab/Tabs';
-import Tab from '../components/Tab/Tab';
-import TabPanel from '../components/Tab/TabPanel';
+import { Tabs, Tab, TabPanel } from '../components/Tab';
 
 const HomePage: React.FC = () => {
   const tabs = [
@@ -24,8 +22,8 @@ const HomePage: React.FC = () => {
       <div className="ui-h-full ui-grid ui-grid-cols-12">
         {tabs.map((tab, index) => (
           <>
-          <Tab index={index} label={tab.label} className="ui-col-start-1 ui-col-end-4" />
-          <TabPanel index={index} className='ui-col-start-4 ui-col-end-12 ui-row-start-1 ui-row-end-1'>
+          <Tab index={index} label={tab.label} className="ui-col-start-1 ui-col-end-5" />
+          <TabPanel index={index} className='ui-col-start-5 ui-col-end-13 ui-row-start-1 ui-row-end-4 ui-p-4'>
             {tab.content}            
           </TabPanel>
           </>
