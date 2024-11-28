@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
   return (
     <div className='ui-p-[100px]'>
     <Tabs>
-      <div className="ui-h-full ui-grid">
+      <div className="ui-h-full ui-grid ui-grid-cols-12">
         {tabs.map((tab, index) => (
           <>
           <Tab index={index} label={tab.label} className="ui-col-start-1 ui-col-end-4" />
