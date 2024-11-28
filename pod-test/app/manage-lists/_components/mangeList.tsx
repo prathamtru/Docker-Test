@@ -7,13 +7,7 @@ import { Text } from "@/components/Text";
 import Link from "next/link";
 import { Row } from "@/components/Row";
 import { Columns } from "@/components/Columns";
- 
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  imageUrl: string;
-}
+import { Product } from "./_typedefinition";
  
 const products: Product[] = [
   {
