@@ -180,7 +180,7 @@ const Products: React.FC = () => {
               <div className="categoryListing">
                 <Row>
                     {foodTypes.map((foodType) => (
-                      <Columns className="col-sm-12 col-md-6 col-lg-3 ui-mb-6">
+                      <Columns className="col-12 col-sm-12 col-md-6 col-lg-3 ui-mb-6">
                         <Card key={foodType.id} className="!ui-shadow-none !ui-rounded-large ui-border ui-border-lightgray">
                           <CardHeader className="ui-flex ui-items-center ui-justify-center !ui-p-0 !ui-border-[0px]">
                             <Image
@@ -216,7 +216,7 @@ const Products: React.FC = () => {
 
               <Row>
                 {products.map((product) => (
-                <Columns className="col-sm-12 col-md-6 col-lg-4 col-2xl-3 ui-mb-6">
+                <Columns className="col-12 col-sm-12 col-md-6 col-lg-4 col-2xl-3 ui-mb-6">
                   <Card key={product.id} className="!ui-shadow-lightGray !ui-rounded-large">
                     <CardHeader className="ui-flex ui-items-center ui-justify-center !ui-p-0 !ui-border-[0px] !ui-pt-[32px] ui-relative">
                       <Image
